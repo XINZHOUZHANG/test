@@ -6,14 +6,14 @@
 ============Quantumultx===============
 [task_local]
 # 我的CK
-10 0 * * * wskey.js, tag=我的CK, img-url=https://raw.githubusercontent.com/58xinian/icon/masterc.png, enabled=true
+10 0 * * * wkey.js, tag=我的CK, img-url=https://raw.githubusercontent.com/58xinian/icon/masterc.png, enabled=true
 ================Loon==============
 [Script]
-cron "10 0 * * *" script-path=wskey.js,tag=我的CK
+cron "10 0 * * *" script-path=wkey.js,tag=我的CK
 ===============Surge=================
-我的CK = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=wskey.js
+我的CK = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=wkey.js
 ============小火箭=========
-我的CK = type=cron,script-path=wskey.js, cronexpr="10 0 * * *", timeout=3600, enable=true
+我的CK = type=cron,script-path=wkey.js, cronexpr="10 0 * * *", timeout=3600, enable=true
  */
 const $ = new Env("更新Cookie");
 const fs = require('fs');
