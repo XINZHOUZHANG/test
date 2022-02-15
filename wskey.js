@@ -1,3 +1,22 @@
+/*
+京东赚赚
+可以做随机互助
+活动入口：京东赚赚小程序
+长期活动，每日收益2毛左右，多号互助会较多
+已支持IOS双京东账号,Node.js支持N个京东账号
+脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
+============Quantumultx===============
+[task_local]
+# 我的CK
+10 0 * * * wskey.js, tag=我的CK, img-url=https://raw.githubusercontent.com/58xinian/icon/masterc.png, enabled=true
+================Loon==============
+[Script]
+cron "10 0 * * *" script-path=wskey.js,tag=我的CK
+===============Surge=================
+我的CK = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=3600,script-path=wskey.js
+============小火箭=========
+我的CK = type=cron,script-path=wskey.js, cronexpr="10 0 * * *", timeout=3600, enable=true
+ */
 const $ = new Env("更新Cookie");
 const fs = require('fs');
 const crypto = require('crypto');
